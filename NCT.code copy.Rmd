@@ -20,7 +20,7 @@ base.directory="/Users/daraneumann/Downloads/Research/NCT/" #overall folder
 data.dir="/Users/daraneumann/Downloads/Research/NCT/Data/"
 results.dir="/Users/daraneumann/Downloads/Research/NCT/Results/"
 figures.dir="/Users/daraneumann/Downloads/Research/NCT/Results/Figures/"
-#xyz
+
 ```
 
 ```{r Packages, warning=FALSE}
