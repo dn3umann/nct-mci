@@ -2,7 +2,7 @@
 %% ---- 1) CONFIGURATION ---- %%
 
 % Set up relative file paths (see README for file structure)
-base_dir = '/Users/daraneumann/Downloads/Research/NCT';
+base_dir = 'Project Folder';
 data_dir = fullfile(base_dir, 'Data');
 matlab_dir = fullfile(base_dir, 'MATLAB');
 packages_dir = fullfile(matlab_dir, 'Packages');
