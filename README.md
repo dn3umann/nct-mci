@@ -1,4 +1,4 @@
-# NCT MCI
+# NCT MCI Repository
 
 This repository contains code used in ***"Disrupted Energy Landscape in Individuals with Mild Cognitive Impairment: Insights from Network Control Theory"*** (https://doi.org/10.1101/2025.06.19.660545).
 
