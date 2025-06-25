@@ -45,8 +45,6 @@ for(i in 1:length(file.names)){
 
 
 
-
-
 # ---- DEMOGRAPHICS ---- #
 
 #Demographic.Data.RData should have the following columns: ID, Age, Sex, Status, T1, one column per region
