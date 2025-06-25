@@ -11,6 +11,8 @@ figures_dir = fullfile(results_dir, 'Figures');
 
 
 
+
+
 %% ---- 2) COMPUTE BEST NUMBER OF CLUSTERS ---- %%
 
 % Load the z-scored TS data from R
@@ -38,6 +40,8 @@ for numClusters = 2:10
 end
 
 disp('Done computing clusters.'); % progress update for end of loop
+
+
 
 
 
@@ -84,6 +88,8 @@ saveas(f,fullfile(figures_dir,"Gain.Variance.Explained.Graph.png"));
 
 
 
+
+
 %% ---- 4) PARTITIONS AND CENTROIDS ---- %%
 
 % Set parameters based of previous results
@@ -101,6 +107,8 @@ centroids = GET_CENTROIDS(TS,partitions,numClusters);
 % Save partition and centroid data for chosen k
 save(fullfile(matlab_dir,['Partitions.K',num2str(numClusters),'.mat']),"partitions")
 save(fullfile(matlab_dir,'Centroids.k.mat'),"centroids")
+
+
 
 
 
@@ -153,6 +161,8 @@ saveas(f,fullfile(figures_dir,['AMI_bp',num2str(split),num2str(numClusters),'.pd
     
 
 
+
+
 %% ---- 6) TIME SERIES LENGTH ---- %%
 
 % Import time series length data from R and load in previous partition data
@@ -170,6 +180,8 @@ for i = 1:n
     leng = length_timeseries(i);
     subjID = [subjID; ones(leng, 1)*i]; %#ok<AGROW>
 end
+
+
 
 
 
@@ -193,6 +205,8 @@ end
 
 % Save transition probability
 save(fullfile(results_dir,"Transition.Prob.mat","tran_prob"));
+
+
 
 
 
@@ -222,6 +236,8 @@ averaged_centroids = reshape(mean(centroids_per_subject(1:n,:,:)),200,numCluster
 
 % Save values of centroids for all subjects
 save(fullfile(results_dir,"Centroids.Per.Subject.mat","centroids_per_subject"));
+
+
 
 
 
@@ -261,6 +277,8 @@ end
 
 % Save energy data
 save(fullfile(results_dir,"E.Full.T.mat","E_Full_T"));
+
+
 
 
 
@@ -344,6 +362,8 @@ save(fullfile(results_dir,"Regional.Minimum.TE.mat","regionalTE");
 
 
 
+
+
 %% ---- 11) BRAIN PLOTS FOR CENTROIDS ---- %%
 
 %Initialize data
@@ -374,6 +394,8 @@ for i = 1:best_number_of_clusters
     
     pause(2)
 end
+
+
 
 
 
@@ -449,6 +471,8 @@ pause(2)
 
 
 
+
+
 %% ---- 13) BRAIN PLOTS FOR REGIONAL ENTROPY ---- %%
 
 % Import data from R
@@ -515,6 +539,8 @@ c = colorbar('WestOutside', 'fontsize', 20); % Color bar settings
 % Save image for lm estimates
 saveas(gcf, strcat(figures_dir, 'Brain.Plot.Entropy.Comparison.png'));
 pause(2)
+
+
 
 
 
@@ -587,6 +613,8 @@ pause(2)
 
 
 
+
+
 %% ---- 15) BRAIN PLOTS FOR REGIONAL AMYLOID BETA PLAQUE ---- %%
 
 % Import data from R
@@ -656,6 +684,8 @@ pause(2)
 
 
 
+
+
 %% ---- 16) BRAIN PLOTS FOR REGIONAL ASSOCIATION BETWEEN TE AND ENTROPY ---- %%
 
 % Import data from R
@@ -680,6 +710,8 @@ c = colorbar('WestOutside','fontsize',20); % color bar settings
 % Save brain plot image
 saveas(gcf,strcat(figures_dir,'Brain.Plot.TE.Entropy.lm.png'));
 pause(2)
+
+
 
 
 
