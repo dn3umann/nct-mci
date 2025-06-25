@@ -4,7 +4,9 @@ This repository contains code used in ***"Disrupted Energy Landscape in Individu
 
 Analysis was conducted using a combination of R and MATLAB. The R script is designed to be executed sequentially. Within the script, there are instructions on when to run portions of the MATLAB code. MATLAB code block are numbered 1-17, and are referenced by these block numbers in the R script.
 
-Please organize your project folder as follows. In the ```Configuration``` blocks at the top of both scripts, specify the file paths corresponding to each directory. These directories are referenced throughout both scripts. MATLAB packages can be found at https://github.com/singlesp/energy_landscape and https://github.com/kjamison/atlasblobs. 
+MATLAB packages can be found at https://github.com/singlesp/energy_landscape and https://github.com/kjamison/atlasblobs and should be added to the ```Packages``` directory.
+
+Please organize your project folder as follows. In the ```Configuration``` blocks at the top of both scripts, specify the file paths corresponding to each directory. These directories are referenced throughout both scripts.
 
 <pre>
 <code>
