@@ -2,23 +2,21 @@
 <pre>
 <code>
 Project Folder
-├── R                               # All R code and files
-│   └── NCT.MCI.code.R              # Main R script
-├── MATLAB                          # All MATLAB code and files
-│   └── NCT.MCI.code.m              # Main MATLAB script
+├── R                              
+│   └── NCT.MCI.Github.code.R       # Main R script
+├── MATLAB                         
+│   └── NCT.MCI.Github.code.m       # Main MATLAB script
 │   ├── Packages/                   # MATLAB packages
-├── Data/                           # Input data files
-│   └── Demographics.RData          # Demographic data
+├── Data/                         
+│   └── Demographics.RData        
 │   ├── Time Series/                # Folder containing time series data (.txt)
 │   └── Tau.csv                     # File containing tau data (.csv)
 │   └── Plaque.csv                  # File containing amyloid beta data (.csv)
 │   └── SC.mat                      # File containing structural connectome data
-├── Results/                        # Output results
-│   ├── Clusters/                   # Clustering results
+├── Results/                      
+│   ├── Clusters/                  
 │   ├── Figures/                    # Plots/images generated from analysis
 ├── README.md                       # Project overview and instructions
-├── .gitignore                      # Excludes large/private files
-└── NCT_Project.Rproj               # RStudio project file
 </code>
 </pre>
 
