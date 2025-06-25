@@ -2,7 +2,7 @@
 # ---- CONFIGURATION ---- #
 
 #Set up relative file paths (see README for file structure)
-base.dir=file.path("/Users/daraneumann/Downloads/Research/NCT")
+base.dir=file.path("Project Folder")
 matlab.dir=file.path(base.dir,"MATLAB")
 data.dir=file.path(base.dir,"Data")
 results.dir=file.path(base.dir,"Results")
