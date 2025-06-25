@@ -1,5 +1,5 @@
 
-%% %% ---- 1) CONFIGURATION ---- %%
+%% ---- 1) CONFIGURATION ---- %%
 
 % Set up relative file paths (see README for file structure)
 base_dir = '/Users/daraneumann/Downloads/Research/NCT';
