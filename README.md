@@ -12,9 +12,9 @@ Please organize your project folder as follows. In the ```Configuration``` block
 <code>
 Project Folder
 ├── R                              
-│   └── NCT.MCI.Github.code.R       # Main R script
+│   └── nct.mci.R.code.R            # Main R script
 ├── MATLAB                         
-│   └── NCT.MCI.Github.code.m       # Main MATLAB script
+│   └── nct.mci.MATLAB.code.m       # Main MATLAB script
 │   ├── Packages/                   # MATLAB packages
 ├── Data/                         
 │   ├── Time Series/                # Folder containing time series data (.txt)
