@@ -309,7 +309,7 @@ for(i in 1:n){cat(k)
   timeseries=t(read.table(file.names[i],header=F,sep="",dec="."));dim(timeseries)
   for(region in 1:(dim(timeseries)[2])){
     timeseries1=timeseries[,region]
-    entropy[k,region]=sample_entropy(timeseries1[-c(1:10)],edim=2)
+    entropy[k,region]=sample_entropy(timeseries1[-c(1:10)],edim=2) #calculate per subject, per region entropy
   }
   k=k+1
 }
